@@ -1,11 +1,31 @@
 *{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+header{
+    position: sticky;
+    top: 0;
+}
+.card>div:hover,.min>div:hover,.min2>div:hover{
+   cursor: pointer;
+   transform:scale(1.05);
+}
+img:hover{
+    cursor: pointer ;
+    
+}
 nav{
     width: 100%;
     height: 70px;
     background-color: #008ecc;
     display: flex;
+
+   
+
+}
+nav>div>div{
+    width: 25px;
+    height: 2px;
+
 
 }
 nav>div>div{
@@ -64,6 +84,7 @@ nav>div:nth-child(7){
     display: flex;
     text-align: center;
     justify-content: space-around;
+
 }
 #nav2>div{
     width: 13%;
@@ -72,3 +93,83 @@ nav>div:nth-child(7){
 #nav2>div>a{
    color: black;
 }
+
+.slide img{
+    width: 100% ;
+}
+.banner{
+    width: 98%;
+    margin: auto;
+}
+.banner img{
+    width: 100%;
+}
+.minislide{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.minislide div{
+    width: 95%;
+    margin: auto;
+
+}
+.minislide>div>img{
+    width: 98%;
+}
+.product{
+    width: 92%;
+    margin: auto;
+}
+.card{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+
+}
+.card>div  {
+    width: 90%;
+    margin: 10px;
+
+}
+.card>div>img{
+    width: 100%;
+}
+.pro{
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 5px;
+    padding: 5px;
+}
+.pro>img{
+    border-radius: 5px;
+}
+.pro>button{
+    width: 98%;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    background-color: #008ecc;
+    padding: 4px 0px 4px 0px ;
+}
+.min{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 50px;
+}
+.min>div{
+    width: 100%;
+    height: 80px;
+}
+.min>div>img{
+    width: 100%;
+    border-radius: 5px;
+}
+.min2>div{
+  height: auto;
+}
+.bannersection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+
