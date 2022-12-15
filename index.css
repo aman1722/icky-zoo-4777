@@ -18,12 +18,19 @@ nav{
     height: 70px;
     background-color: #008ecc;
     display: flex;
+
    
 
 }
 nav>div>div{
     width: 25px;
     height: 2px;
+
+
+}
+nav>div>div{
+    width: 40px;
+    height: 3px;
     background-color: white;
     margin: 4px;
 }
@@ -86,6 +93,7 @@ nav>div:nth-child(7){
 #nav2>div>a{
    color: black;
 }
+
 .slide img{
     width: 100% ;
 }
@@ -163,4 +171,5 @@ nav>div:nth-child(7){
     grid-template-columns: repeat(2,1fr);
     gap: 15px;
 }
+
 
