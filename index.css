@@ -20,8 +20,7 @@ img:hover{
     height: 70px;
     background-color: #008ecc;
     display: flex;
-     justify-content: space-evenly; 
-  
+    justify-content: space-evenly;
    
 
 }
@@ -29,6 +28,12 @@ img:hover{
 #nav>div>div{
     width: 25px;
     height: 2px;
+
+
+}
+nav>div>div{
+    width: 40px;
+    height: 3px;
     background-color: white;
     margin: 4px;
 }
@@ -129,6 +134,7 @@ a{
 #nav2 a{
    color: black;
 }
+
 .slide img{
     width: 100% ;
 }
@@ -249,5 +255,6 @@ a{
     font-size: smaller;
     color: grey;
 }
+
 
 
