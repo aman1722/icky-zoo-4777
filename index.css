@@ -4,6 +4,8 @@
 header{
     position: sticky;
     top: 0;
+    overflow: hidden;
+    z-index: 999999;
 }
 .card>div:hover,.min>div:hover,.min2>div:hover{
    cursor: pointer;
@@ -171,5 +173,47 @@ nav>div:nth-child(7){
     grid-template-columns: repeat(2,1fr);
     gap: 15px;
 }
+.footer{
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f3f3f3;
+    margin-top: 30px;
+    border-bottom: 0.5px solid rgb(224, 224, 224) ;
+}
+.footer>div{
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    
+}
+.footer a{
+    color: #008ecc;
+    display: inline;
+}
+.footer>div:nth-child(3)>div{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer>div:nth-child(3){
+    border-left: 0.5px solid rgb(224, 224, 224) ;
+    padding-left: 20px;
+}
+.footer2{
+    display: flex;
+    background-color: #f3f3f3;
+    margin-top: 0px;
+}
+.footer2>div{
+    width: 50%;
+    height: 40px;
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: smaller;
+    color: grey;
+}
+
 
 
