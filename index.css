@@ -255,6 +255,11 @@ a{
     font-size: smaller;
     color: grey;
 }
-
+#card>div:nth-child(3)>img{
+    height: 180px;
+}
+#card>div:nth-child(4)>img{
+    height: 180px;
+}
 
 
