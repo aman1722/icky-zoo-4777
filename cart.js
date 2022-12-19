@@ -25,7 +25,9 @@ if(cartproducts==null){
 totalpro.innerText=cartproducts.length;
 
 cartproducts.forEach(function(e,i){
- let parent = document.getElementById("card");
+  let totalCount=cartproducts.length;
+  //console.log(totalCount)
+  let parent = document.getElementById("card");
   let card = document.createElement("div");
   card.setAttribute("class","pro")
 
@@ -39,6 +41,7 @@ cartproducts.forEach(function(e,i){
 
   let Price = document.createElement("h3");
   Price.innerText = "₹"+" "+e.price;
+  // console.log(e.price);
 
   
   
@@ -99,18 +102,23 @@ cartproducts.forEach(function(e,i){
 
   })
 
-  let totalprice = cartproducts.reduce((acc,e)=>acc+(+e.price),0);
-  let p = qty.innerText*totalprice;
+  let totalprice = cartproducts.reduce((acc,e)=>acc+(parseInt(e.price)),0);
+  console.log(+e.price)
+  let p = totalprice;
+
+  console.log(p);
 
 totalcost.innerText="₹"+" "+p;
  
 
   card.append(Img,Name,Price,rem,qty,add,del)
   parent.append(card);
+  let sup=document.querySelector("#cartCount").innerText=totalCount;
 
   
 
 });
+
 
 placeorder.addEventListener("click",function(){
     localStorage.setItem("paymentproducts",JSON.stringify(cartproducts));
