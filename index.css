@@ -301,8 +301,11 @@ a{
 #nav>div:nth-child(4){
     display: none;
 }
-#nav>div:nth-child(5){
+#nav>div:nth-child(5)>img{
     display: none;
+}
+#nav>div:nth-child(5)>a{
+    display: block;
 }
 .minislide{
     display: grid;
@@ -313,13 +316,19 @@ a{
     grid-template-columns: repeat(3,1fr);
   
   }
-}
-.footer{
+
+  .footer{
     flex-direction: column;
+    height: auto;
 }
 .footer2{
     flex-direction: column;
+    height: auto;
+
 }
+}
+
+
 
 @media all and (max-width:500px) and (min-width:100px) {
     #nav{
@@ -339,8 +348,11 @@ a{
     #nav>div:nth-child(3){
         display: none;
     }
-    #nav>div:nth-child(5){
+    #nav>div:nth-child(5)>img{
         display: none;
+    }
+    #nav>div:nth-child(5)>a{
+        display: block;
     }
     .minislide{
         display: grid;
@@ -358,9 +370,12 @@ a{
     
     .footer{
         flex-direction: column;
+        height: auto;
     }
     .footer2{
         flex-direction: column;
+        height: auto;
+
     }
 }
 
