@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address-JioMart</title>
+    <link rel="icon" type="image" href="./jiomartfavicon.png">
+    <link rel="stylesheet" href="./address.css">
+</head>
+<body>
+    <div id="nav">
+      <div><a href="./index.html"> <img style="width: 100px;" src="./images/jiomart_logo_beta.svg " alt=""> </a></div>
+    </div>
+    <div id="con" class="con">
+        <div>
+            <h1>Order Summary!</h1>
+        <form id="address">
+            <h2>Enter Your Address!</h2>
+            <input placeholder="Pin code" type="number" id="Pin" required><br>
+            <input placeholder="Flat/House No." type="text" id="house" required><br>
+            <input placeholder="Address" type="text" id="add" required><br>
+            <input placeholder="Landmark/Area" type="text" id="landmark" required><br>
+            <input placeholder="City/State" type="text"  id="City" required><br>
+            <h3>Delivery Contact</h3>
+            <input placeholder="Name" type="text"  id="name" required><br>
+            <input placeholder="Mobile Number" type="number"  id="mob" required><br>
+            <input style="background-color: #008ecc; font-family: 'Times New Roman', Times, serif; color: white; border: 0px;" type="submit" value="Save Address">
+        </form>
+
+        <div id="adddis">
+            <h1>Delivery Address!</h1>
+            <h3 id="disname"></h3>
+            <p id="addres"></p>
+            <p id="housno"></p>
+            <p id="city"></p>
+            <p id="pincode"></p>
+            <p id="landmark"></p>
+            <p id="Mobile"></p>
+            <button>Default Address!</button>
+        </div>
+        <div id="card" class="card">
+            <!-- Append cart items -->
+        </div>
+    </div>
+        <div class="total">
+            <h1>Payment Details</h1>
+            <h2>No of Produts:- <span id="count"></span></h2>
+            <h2>Total Price:-<span id="cost"></span></h2>
+
+            <input type="checkbox" name="check" >UPI<br>
+            <input type="checkbox" name="check" >Wallet<br>
+            <input type="checkbox" name="check" >Gpay<br>
+            <input type="checkbox" name="check" >Paytm<br>
+            <input type="checkbox" name="check" >Cash On Delivery
+
+            
+
+    
+            <button id="order">Make Payment</button>
+    
+        </div>
+    </div>
+</body>
+<script src="./address.js"></script>
+</html>
