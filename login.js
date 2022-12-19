@@ -9,7 +9,11 @@ signin.style.display = "none"
 signupbtn.addEventListener("click",function(){
     signin.style.display="none";
     signup.style.display="block";
+<<<<<<< HEAD
     document.title="Signup!-JioMart"
+=======
+    document.title="Signup!"
+>>>>>>> db31e3db009bf1cefd1da06f5687aa33c653daa5
 
 
 });
@@ -17,13 +21,21 @@ signupbtn.addEventListener("click",function(){
 signinbtn.addEventListener("click",function(){
     signin.style.display="block";
     signup.style.display="none";
+<<<<<<< HEAD
     document.title="Signin!-JioMart"
+=======
+    document.title="Signin!"
+>>>>>>> db31e3db009bf1cefd1da06f5687aa33c653daa5
     
 });
 
 signup.addEventListener("submit",function(e){
     e.preventDefault();
+<<<<<<< HEAD
     let  username = signup.name.value;
+=======
+    let name = signup.name.value;
+>>>>>>> db31e3db009bf1cefd1da06f5687aa33c653daa5
     let email = signup.email.value;
     let password = signup.pass.value;
     console.log(password);
@@ -31,7 +43,11 @@ signup.addEventListener("submit",function(e){
     if(password != signup.passchk.value){
         alert("Passwords are not same!");
     }else{
+<<<<<<< HEAD
         localStorage.setItem("name",username);
+=======
+        localStorage.setItem("name",name);
+>>>>>>> db31e3db009bf1cefd1da06f5687aa33c653daa5
         localStorage.setItem("email",email);
         localStorage.setItem("password",password);
         alert("Signup Sucessful!");
