@@ -25,6 +25,12 @@ img:hover{
    
 
 }
+#cartCount{
+    background-color:red;
+    border-radius: 10px;
+    padding: 2px;
+    border: 1px solid black;
+}
 
 #nav>div>div{
     width: 25px;
